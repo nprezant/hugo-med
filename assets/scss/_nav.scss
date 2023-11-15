@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-bottom: thin solid #5085a5;
+  font-style: normal;
+  a {
+    padding: 1ex;
+    text-decoration: none;
+    font-style: inherit; // most links are italicized
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  li {
+    margin: 0;
+    padding: 1ex;
+    &:first-child {
+      flex-grow: 1;
+    }
+  }
+}

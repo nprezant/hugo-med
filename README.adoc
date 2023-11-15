@@ -1,0 +1,22 @@
+= Med
+
+A hugo theme.
+
+== Installation
+
+Inside the folder of your Hugo site, run:
+
+[source,bash]
+----
+git clone https://github.com/nprezant/hugo-med themes/med
+----
+
+Then change in `config.toml`:
+
+[source,toml]
+----
+theme = "med"
+----
+
+For more information read the official Hugo
+https://gohugo.io/getting-started/quick-start/#step-3-add-a-theme[guide].

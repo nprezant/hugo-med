@@ -2,10 +2,10 @@
 
   <h1>{{ .Title }}</h1>
   {{ with .Params.subtitle }}
-    <p class="subtitle">{{ . }}</p>
+    <p class="subtitle lighter">{{ . }}</p>
   {{ end }}
   {{ if not .Date.IsZero }}
-    <p class="date">{{ .Date.Format "Jan 2, 2006" }}</p>
+    <p class="date lighter">{{ .Date.Format "Jan 2, 2006" }}</p>
   {{ end }}
   {{- .Content -}}
   {{- partial "taglist" . -}}

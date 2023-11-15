@@ -1,0 +1,113 @@
+// ------------------------------------------
+// Custom classes (introduced by theme)
+// ------------------------------------------
+
+.lighter {
+  color: rgb(117, 117, 117);
+}
+.subtitle {
+  font-size: larger;
+}
+.date {
+  font-size: smaller;
+}
+.pagelist {
+  list-style-type: none;
+  padding: 0;
+}
+.summary {
+  display: flex;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  * {
+    margin: 0;
+    text-decoration: none;
+  }
+  figure {
+    margin-left: 2ex;
+    min-width: fit-content;
+  }
+  &:hover {
+    color: inherit;
+  }
+}
+.summary-day {
+  &::before {
+    content: " - ";
+  }
+}
+.summary-header {
+  margin-bottom: 1ex;
+}
+.summary-title {
+  text-decoration: underline;
+}
+.summary-text {
+  margin-top: 0;
+  position: relative;
+  overflow: hidden;
+  height: 4.5em;
+  &::after {
+    content: "";
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    height: 1.2em;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+  }
+}
+.home-title {
+  font-size: xxx-large;
+}
+.home-subtitle {
+  font-size: larger;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  a {
+    padding: 1ex;
+  }
+}
+.count {
+  font-style: normal;
+  border: thin solid #004B6B;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  min-width: 2.2ex;
+  font-size: small;
+  padding: 0.2ex;
+  padding-top: 0.3ex;
+  padding-bottom: 0.1ex;
+  margin-left: 1ex;
+  transform: translate(0px, -1ex);
+}
+.taglist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    margin: 0;
+  }
+}
+.tag {
+  display: block;
+  padding: 1ex 2ex;
+  margin-top: 1ex;
+  margin-left: 0.5ex;
+  white-space: nowrap;
+  border-radius: 100ex;
+  background-color: rgb(242, 242, 242);
+  border: thin solid rgb(134, 134, 134);
+  text-decoration: none;
+  font-style: inherit; // most links are italicized
+  color: inherit;
+}

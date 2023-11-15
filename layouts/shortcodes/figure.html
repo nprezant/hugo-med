@@ -34,7 +34,7 @@
     /><!-- Closing img tag -->
     {{- if .Get "link" }}</a>{{ end -}}
     {{- if or (or (or (or (.Get "unsplash-user") (.Get "unsplash-handle")) (.Get "title")) (.Get "caption")) (.Get "attr") -}}
-        <figcaption>
+        <figcaption class="lighter">
             {{ with (.Get "title") -}}
                 <h4>{{ . }}</h4>
             {{- end -}}

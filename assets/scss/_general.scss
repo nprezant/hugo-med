@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans');
+  
+main {
+  display: flex;
+  justify-content: center;
+  padding: 2ex;
+}
+
+// Keeps text in a smaller area on wide screens
+@media screen and (min-width: 70ex) {
+  .content {
+    min-width: 0;
+    max-width: 70ex;
+    width: 100%;
+  }
+}
+
+body {
+  // font-family: "Open Sans", Georgia, Cambria, "Times New Roman", Times, sans-serif;
+  color: rgb(41, 41, 41);
+  margin: 0;
+  font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  // font-family: Merriweather, serif;
+  color: #000000;
+}
+
+h1 {
+  font-size: xxx-large;
+  word-break: break-word;
+}
+
+a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+em {
+  line-height: inherit;
+}
+
+p {
+  margin-top: 2.6ex;
+}
+
+li {
+  margin-top: 2.6ex;
+}
+
+figure {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4ex;
+}
+
+figcaption * {
+  margin-top: 0.5ex;
+}

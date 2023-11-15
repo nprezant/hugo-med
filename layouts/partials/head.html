@@ -7,8 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 
   <!-- Theme CSS. Might require extended hugo. -->
-  {{ $res := resources.Get "/sass/style.sass" }}
+  {{ $res := resources.Get "/scss/style.scss" }}
   {{ $style := $res | resources.ToCSS }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+
+  <!-- Custom CSS from the Website. -->
+  {{ with resources.Get "/scss/customStyle.scss" }}
+  {{ $customStyle := . | resources.ToCSS }}
+  <link rel="stylesheet" href="{{ $customStyle.RelPermalink }}" />
+  {{ end }}
+
+  <!-- Prevents the GET favicon.ico 404s -->
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 
 </head>

@@ -17,7 +17,6 @@
   <link rel="stylesheet" href="{{ $customStyle.RelPermalink }}" />
   {{ end }}
 
-  <!-- Prevents the GET favicon.ico 404s -->
-  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
-
+  <!-- favicons -->
+  {{- partial "favicons.html" . }}
 </head>

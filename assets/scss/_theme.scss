@@ -75,18 +75,12 @@
   }
 }
 .count {
-  font-style: normal;
-  border: thin solid #004B6B;
-  border-radius: 50%;
-  text-align: center;
-  display: inline-block;
-  min-width: 2.2ex;
-  font-size: small;
-  padding: 0.2ex;
-  padding-top: 0.3ex;
-  padding-bottom: 0.1ex;
-  margin-left: 1ex;
-  transform: translate(0px, -1ex);
+  &::before {
+    content: '(';
+  }
+  &::after {
+    content: ')';
+  }
 }
 .taglist {
   list-style-type: none;
